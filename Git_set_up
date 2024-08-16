@@ -1,0 +1,173 @@
+akhilpagadapoola@Akhils-MacBook-Air ~ % ls
+Applications			Mainframe			eclipse
+Desktop				Movies				eclipse-workspace
+Documents			Music				iCloud Drive (Archive)
+Downloads			Pictures			shell
+Gold_Site_Ecommerce		Public				trail
+HTML,CSS			Virtual Machines.localized
+Library				aws
+akhilpagadapoola@Akhils-MacBook-Air ~ % mdkir Gold_Site_Ecommerce-1
+zsh: command not found: mdkir
+akhilpagadapoola@Akhils-MacBook-Air ~ % clera
+zsh: command not found: clera
+akhilpagadapoola@Akhils-MacBook-Air ~ % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+akhilpagadapoola@Akhils-MacBook-Air ~ % ls
+Applications			Mainframe			eclipse
+Desktop				Movies				eclipse-workspace
+Documents			Music				iCloud Drive (Archive)
+Downloads			Pictures			shell
+Gold_Site_Ecommerce		Public				trail
+HTML,CSS			Virtual Machines.localized
+Library				aws
+akhilpagadapoola@Akhils-MacBook-Air ~ % mkdir Gold_Site_Ecommerce-1
+akhilpagadapoola@Akhils-MacBook-Air ~ % cd Gold_Site_Ecommerce-1
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % pwd
+/Users/akhilpagadapoola/Gold_Site_Ecommerce-1
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % cd ..
+akhilpagadapoola@Akhils-MacBook-Air ~ % ls
+Applications			Library				aws
+Desktop				Mainframe			eclipse
+Documents			Movies				eclipse-workspace
+Downloads			Music				iCloud Drive (Archive)
+Gold_Site_Ecommerce		Pictures			shell
+Gold_Site_Ecommerce-1		Public				trail
+HTML,CSS			Virtual Machines.localized
+akhilpagadapoola@Akhils-MacBook-Air ~ % cd Gold_Site_Ecommerce
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce % cp -r * /Users/akhilpagadapoola/Gold_Site_Ecommerce-1
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce % cd /Users/akhilpagadapoola/Gold_Site_Ecommerce-1
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % ls
+Jenkinsfile		package-lock.json	src
+README.md		package.json		test
+golddockerfile		public			test2023
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/akhilpagadapoola/Gold_Site_Ecommerce-1/.git/
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % ls -la
+total 1480
+drwxr-xr-x  12 akhilpagadapoola  staff     384 Aug 16 16:45 .
+drwxr-x---+ 47 akhilpagadapoola  staff    1504 Aug 16 16:43 ..
+drwxr-xr-x   9 akhilpagadapoola  staff     288 Aug 16 16:45 .git
+-rw-r--r--   1 akhilpagadapoola  staff     770 Aug 16 16:44 Jenkinsfile
+-rw-r--r--   1 akhilpagadapoola  staff    3359 Aug 16 16:44 README.md
+-rw-r--r--   1 akhilpagadapoola  staff     533 Aug 16 16:44 golddockerfile
+-rw-r--r--   1 akhilpagadapoola  staff  730846 Aug 16 16:44 package-lock.json
+-rw-r--r--   1 akhilpagadapoola  staff    1132 Aug 16 16:44 package.json
+drwxr-xr-x   4 akhilpagadapoola  staff     128 Aug 16 16:44 public
+drwxr-xr-x   7 akhilpagadapoola  staff     224 Aug 16 16:44 src
+-rw-r--r--   1 akhilpagadapoola  staff      23 Aug 16 16:44 test
+-rw-r--r--   1 akhilpagadapoola  staff      69 Aug 16 16:44 test2023
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git remote add origin https://github.com/akhilgit19/Gold_Site_Ecommerce-1.git
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git remote set-url origin https://github.com/akhilgit19/Gold_Site_Ecommerce-1.git
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git branch
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git checkout -b main
+Switched to a new branch 'main'
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Jenkinsfile
+	README.md
+	golddockerfile
+	package-lock.json
+	package.json
+	public/
+	src/
+	test
+	test2023
+
+nothing added to commit but untracked files present (use "git add" to track)
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git add .
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git commit -m "1"
+[main (root-commit) b8cb2b6] 1
+ 53 files changed, 19787 insertions(+)
+ create mode 100644 Jenkinsfile
+ create mode 100644 README.md
+ create mode 100644 golddockerfile
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 public/assets/braclet/b1.jfif
+ create mode 100644 public/assets/braclet/b2.jfif
+ create mode 100644 public/assets/braclet/b3.jfif
+ create mode 100644 public/assets/braclet/b4.jfif
+ create mode 100644 public/assets/braclet/main.jfif
+ create mode 100644 public/assets/chains/c1.jfif
+ create mode 100644 public/assets/chains/c2.jfif
+ create mode 100644 public/assets/chains/c3.jfif
+ create mode 100644 public/assets/chains/download.jfif
+ create mode 100644 public/assets/chains/main.jfif
+ create mode 100644 public/assets/chains/one.jfif
+ create mode 100644 public/assets/gold.ico
+ create mode 100644 public/assets/rings/main.png
+ create mode 100644 public/assets/rings/main2.png
+ create mode 100644 public/assets/rings/r1.jfif
+ create mode 100644 public/assets/rings/r2.jfif
+ create mode 100644 public/assets/rings/r3.jfif
+ create mode 100644 public/assets/rings/r4.jfif
+ create mode 100644 public/assets/rings/r5.png
+ create mode 100644 public/index.html
+ create mode 100644 src/App.jsx
+ create mode 100644 src/components/Announcement.css
+ create mode 100644 src/components/Announcement.jsx
+ create mode 100644 src/components/Categorie.css
+ create mode 100644 src/components/Categorie.jsx
+ create mode 100644 src/components/CategoriesItems.css
+ create mode 100644 src/components/CategoriesItems.jsx
+ create mode 100644 src/components/GoldSetter.css
+ create mode 100644 src/components/GoldSetter.jsx
+ create mode 100644 src/components/Navba.css
+ create mode 100644 src/components/Navba.jsx
+ create mode 100644 src/components/ProductItems.css
+ create mode 100644 src/components/ProductItems.jsx
+ create mode 100644 src/components/ProductRings.jsx
+ create mode 100644 src/components/ProductSIngle.jsx
+ create mode 100644 src/components/Sliders.css
+ create mode 100644 src/components/Sliders.jsx
+ create mode 100644 src/data.js
+ create mode 100644 src/index.js
+ create mode 100644 src/pages/Cart.jsx
+ create mode 100644 src/pages/Home.jsx
+ create mode 100644 src/pages/Login.css
+ create mode 100644 src/pages/Login.jsx
+ create mode 100644 src/pages/ProductList.jsx
+ create mode 100644 src/pages/Register.css
+ create mode 100644 src/pages/Register.jsx
+ create mode 100644 test
+ create mode 100644 test2023
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git push -u origin main 
+Enumerating objects: 61, done.
+Counting objects: 100% (61/61), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (60/60), done.
+Writing objects: 100% (61/61), 1.07 MiB | 25.48 MiB/s, done.
+Total 61 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/akhilgit19/Gold_Site_Ecommerce-1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % 
