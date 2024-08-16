@@ -171,3 +171,26 @@ To https://github.com/akhilgit19/Gold_Site_Ecommerce-1.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % 
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git branch
+* main
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.55 KiB | 870.00 KiB/s, done.
+From https://github.com/akhilgit19/Gold_Site_Ecommerce-1
+   b8cb2b6..4e4eea9  main       -> origin/main
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % git pull origin main
+From https://github.com/akhilgit19/Gold_Site_Ecommerce-1
+ * branch            main       -> FETCH_HEAD
+Updating b8cb2b6..4e4eea9
+Fast-forward
+ Git_set_up | 173 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 173 insertions(+)
+ create mode 100644 Git_set_up
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % ls
+Git_set_up		golddockerfile		public			test2023
+Jenkinsfile		package-lock.json	src
+README.md		package.json		test
+akhilpagadapoola@Akhils-MacBook-Air Gold_Site_Ecommerce-1 % 
