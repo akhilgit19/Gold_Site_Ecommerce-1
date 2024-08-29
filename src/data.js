@@ -9,14 +9,14 @@ export const sliderItems = [
   {
     id: "2",
     img: "assets/rings/main.png",
-    title: "Rings for Hari",
+    title: "Rings for Harindra",
     desc: "Rings sale at 50% offer",
     bg: "aqua",
   },
   {
     id: "3",
     img: "assets/chains/main.jfif",
-    title: "Chains for Chains",
+    title: "Chains for Harish",
     desc: "Chains sale at 50% offer",
     bg: "orange",
   },
