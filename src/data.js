@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "Automated React-Nginx server app deployment using Jenkins",
+    title: "React-Nginx server app deployment using Jenkins",
     desc: "This is now in new commit",
     bg: "green",
   },
