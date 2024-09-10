@@ -1,11 +1,10 @@
-FROM node:18 AS build
+FROM node:18 as build
 # Set the working directory in the container
 WORKDIR /app
 # Copy package.json and package-lock.json from GitHub repository
 COPY package*.json ./
 # Install dependencies
 RUN npm install
-RUN npm install react-scripts
 #Copy git code to /app directory
 COPY . .
 # Build the React app
