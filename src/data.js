@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "xI-xD- test09",
+    title: "FI-FD- test09",
     desc: "This is now in new commit",
     bg: "green",
   },
