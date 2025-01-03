@@ -3,21 +3,21 @@ pipeline {
     
     stages {
         // Uncomment the below stage if you configured SonarQube
-        stage('Run Sonarqube') {
-            environment {
-                scannerHome = tool 'sonarqubescanner'
-            }
-            steps {
-                withSonarQubeEnv(credentialsId: 'sonarqube', installationName: 'sonarqubeserver') {
-                    sh "${scannerHome}/bin/sonar-scanner"
-                }
-            }
-        }
+        // stage('Run Sonarqube') {
+        //     environment {
+        //         scannerHome = tool 'sonarqubescanner'
+        //     }
+        //     steps {
+        //         withSonarQubeEnv(credentialsId: 'sonarqube', installationName: 'sonarqubeserver') {
+        //             sh "${scannerHome}/bin/sonar-scanner"
+        //         }
+        //     }
+        // }
         stage('Build Docker images on Build Server') {
             steps {
                 script {
                     // Execute Ansible playbook on Build Server
-                    sh "ssh ubuntu@172.31.81.72 'ansible-playbook /home/ubuntu/build.yaml'"                    // 'ansible-playbook /home/ubuntu/playbook.yaml'"
+                    sh "ssh ubuntu@172.31.93.4 'ansible-playbook /home/ubuntu/build.yaml'"                    // 'ansible-playbook /home/ubuntu/playbook.yaml'"
                 
                     
                     }
@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Execute deployment playbook on Deploy Server
-                    sh "ssh ubuntu@172.31.81.72 'ansible-playbook /home/ubuntu/deploy.yaml'"
+                    sh "ssh ubuntu@172.31.93.4 'ansible-playbook /home/ubuntu/deploy.yaml'"
                 }
             }
         }
